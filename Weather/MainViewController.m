@@ -97,7 +97,7 @@ typedef enum {
     
     self.locationManager = [[CLLocationManager alloc] init];
     self.locationManager.delegate=self;
-    self.locationManager.desiredAccuracy=kCLLocationAccuracyNearestTenMeters;
+    self.locationManager.desiredAccuracy=kCLLocationAccuracyThreeKilometers;
     self.locationManager.distanceFilter=kCLDistanceFilterNone;
     [self.locationManager requestWhenInUseAuthorization];
     [self.locationManager startMonitoringSignificantLocationChanges];
